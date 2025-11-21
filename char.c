@@ -17,7 +17,7 @@ void names(char first[],char last[],char sw)
         i++;
         j++;
     }
-    full[i]=' ';
+    full[i]='\0 ';
     printf("%s",full);
     int len=i+1;
     if(len<sw)
