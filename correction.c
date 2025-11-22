@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 struct student
 {
@@ -19,15 +20,15 @@ void main()
     {
       for(int k=0;k<j+1;k++)
       {
-          while(s[j]<s[k])
+          while(s[j].marks<s[k].marks)
           {
-              temp=s[j];
+              temp=s[j].marks;
               s[j]=s[k];
-              s[k]=temp;
+              s[k].marks=temp;
           }
       }
     }
-    printf("highest marks:",s[0].marks);
+    printf("highest marks:%f",s[0].marks);
     
     
     
